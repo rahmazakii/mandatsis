@@ -2,9 +2,9 @@
 
 include('koneksi.php');
 
-session_start();
+session_start(); /* untuk memulai session*/
 
-if (!isset($_SESSION['login'])) {
+if (!isset($_SESSION['login'])) { 
     header('location: login.php');
 }
 
@@ -21,6 +21,11 @@ $data = mysqli_query($koneksi, "SELECT * FROM students");
     <title>Mandatsis | Dashboard</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background: url("mandatsis2.png");
+        }
+    </style>
 </head>
 
 <body>

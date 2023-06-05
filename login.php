@@ -9,9 +9,16 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
     <style>
+        body {
+            background: url("mandatsis.png");
+            margin: 0px auto;    
+            background-size: 100%;                     
+            width: 750px;
+        }
         body,
         .container {
             min-height: 100vh !important;
+           
         }
     </style>
 </head>
